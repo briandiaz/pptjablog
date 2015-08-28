@@ -33,11 +33,10 @@ class Post
 	def self.all
 		PostService.get_posts
 	end
+	
+	def self.all_tags_with_frequency
+		PostService.all_tags
+	end
 
 
 end
-
-p = Post.new(
-	{"id" => 1, "title" => 2}
-)
-puts p.send("id")

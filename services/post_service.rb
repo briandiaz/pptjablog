@@ -25,6 +25,16 @@ module PostService
 			end
 			posts
 		end
+		
+		def all_tags
+			tags_hash = Hash.new(0)
+			get_posts.each do |post|
+				post.tags_list.each do |tag|
+					tags_hash[tag] += 1
+				end
+			end
+			tags_hash
+		end
 
 	end	
 end

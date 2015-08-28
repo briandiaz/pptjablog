@@ -75,31 +75,8 @@
 </nav>
 <div class="container">
 	<div class="row">
-		<div class="col-md-9">
-			<% @posts.each do |post| %>
-			  <article class="post">
-			  	<h2 class="title"><a href="<%= @root_url %>/posts/<%= post.id %>"><%= post.title %></a></h2>
-			  	<hr/>
-			  	<label class="author">by <%= post.author %></label>
-			  	<img src="http://lorempixel.com/900/300/" class="img-responsive">
-			  	<p class="description"><%= post.short_description %> <a href="<%= @root_url %>/posts/<%= post.id %>"> Read More >></a></p>
-			  	<p class="tags">
-			  	<% post.tags_list.each do |tag| %>
-			  		<a href="<%= @root_url %>/tags/<%= tag %>"><label class="label label-primary"><%= tag %></label></a>
-			  	<% end %>
-			  	</p>
-			  </article>
-			<% end %>
-		</div>
-		<div class="col-md-3">
-			<div class="list-group">
-                
-			  <% @tags.each do |key, value| %>
-			  <a href="<%= @root_url %>/tags/<%= key %>" class="list-group-item">
-                  <h4 class="list-group-item-heading"><%= key %> (<%= value %>)</h4>
-              </a>
-			  <% end %>
-			 </div>
+		<div class="col-md-6">
+		    
 		</div>
 	</div>
 
