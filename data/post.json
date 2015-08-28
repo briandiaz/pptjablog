@@ -1,0 +1,9 @@
+{
+  "posts": {
+  "id": "1",
+  "title": "My first post",
+  "tags": "cooking, sports",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare sapien et mauris euismod.",
+  "author": "Pixelator"
+  }
+}
